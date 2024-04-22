@@ -7,10 +7,10 @@ import os #Esto importa el módulo os, que proporciona funciones para interactua
 
 def enviar_correo(destinatario, asunto, cuerpo, adjunto=None):
     # Configurar servidor SMTP
-    servidor_smtp = 'corporacion@mcc.hn'
+    servidor_smtp = 'smtp.gmail.com'
     puerto_smtp = 587
-    usuario_smtp = 'jgarcia@mcc.hn'
-    contraseña_smtp = 'Garcia.2024'
+    usuario_smtp = 'jimmygarcia470@gmail.com'
+    contraseña_smtp = 'jimmygaiden470'
 
     # Crear objeto mensaje
     #Este objeto permite adjuntar múltiples partes al mensaje, como texto plano, archivos adjuntos, imágenes, etc.
