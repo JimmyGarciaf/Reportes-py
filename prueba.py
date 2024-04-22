@@ -16,7 +16,7 @@ def enviar_correo(destinatario, asunto, cuerpo):
     mensaje['From'] = usuario_smtp
     mensaje['To'] = destinatario
     mensaje['Subject'] = asunto
-
+    
     # Adjuntar cuerpo del correo
     mensaje.attach(MIMEText(cuerpo, 'plain'))
 

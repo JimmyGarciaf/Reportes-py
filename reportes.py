@@ -7,8 +7,8 @@ import os #Esto importa el módulo os, que proporciona funciones para interactua
 
 def enviar_correo(destinatario, asunto, cuerpo, adjunto=None):
     # Configurar servidor SMTP
-    servidor_smtp = 'smtp.gmail.com'
-    puerto_smtp = 587
+    servidor_smtp = 'mail.mcc.hn'
+    puerto_smtp = 465
     usuario_smtp = 'jimmygarcia470@gmail.com'
     contraseña_smtp = 'jimmygaiden470'
 
@@ -41,4 +41,11 @@ def enviar_correo(destinatario, asunto, cuerpo, adjunto=None):
         servidor.login(usuario_smtp, contraseña_smtp)#Aqui vamos autentificar en el servidor SMTP utilizando el nombre de usuario y la contraseña.
         servidor.send_message(mensaje)# Enviamos el msj de correo.
 
-    print("Correo enviado con éxito!")#Y por ultimo verificamos con un msj de consola que se envio el correo.
+
+    #Y por ultimo verificamos con un msj de consola que se envio el correo.
+    print("Correo enviado con éxito!")
+
+def main():
+    #leer archivos de reportes
+    ruta_reporte = 'Documentos/foto1.JPEG'
+    
