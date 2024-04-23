@@ -9,7 +9,7 @@ def enviar_correo(destinatario, asunto, cuerpo):
 
     # Tu dirección de correo electrónico de Gmail y contraseña
     usuario_smtp = 'jimmygarcia470@gmail.com'
-    contraseña_smtp = 'Jimmygaiden470'
+    contraseña_smtp = 'Jimmy'
 
     # Crear objeto mensaje
     mensaje = MIMEMultipart()
