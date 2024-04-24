@@ -9,8 +9,8 @@ def enviar_correo(destinatario, asunto, cuerpo, adjunto=None):
     # Configurar servidor SMTP
     servidor_smtp = 'mail.mcc.hn'
     puerto_smtp = 465
-    usuario_smtp = 'jimmygarcia470@gmail.com'
-    contraseña_smtp = 'jimmygaiden470'
+    usuario_smtp = 'jgarcia@mcc.hn'
+    contraseña_smtp = 'Garcia.2024'
 
     # Crear objeto mensaje
     #Este objeto permite adjuntar múltiples partes al mensaje, como texto plano, archivos adjuntos, imágenes, etc.
@@ -45,7 +45,8 @@ def enviar_correo(destinatario, asunto, cuerpo, adjunto=None):
     #Y por ultimo verificamos con un msj de consola que se envio el correo.
     print("Correo enviado con éxito!")
 
-def main():
-    #leer archivos de reportes
-    ruta_reporte = 'Documentos/foto1.JPEG'
-    
+destinatario = 'jimmygarcia470@gmail.com'
+asunto = 'Prueba de correo desde Python'
+cuerpo = 'Este es un correo de prueba enviado desde Python utilizando el servidor SMTP de Gmail.'
+
+enviar_correo(destinatario, asunto, cuerpo)
